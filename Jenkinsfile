@@ -29,6 +29,15 @@ pipeline {
                 echo 'Packaging the project...'
                 // Add your package steps here
             }
+
+            
+        }
+
+        stage('development') {
+            steps {
+                echo 'Dev Stage...'
+                // Add your build steps here
+            }
         }
     }
 }
