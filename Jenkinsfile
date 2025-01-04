@@ -31,7 +31,7 @@ pipeline {
         }
 
           post {
-        success {
+        always {
             archiveArtifacts artifacts: '**/target/*.jar', allowEmptyArchive: true
         }
     }
